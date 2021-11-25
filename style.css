@@ -1,0 +1,481 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+html {
+    font-family: 'Barlow', sans-serif;
+   
+}
+
+h2, h3, h4 {
+    font-family: 'Fraunces', sans-serif;
+}
+
+/* Beginning of header section*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: transparent;
+    height: 6rem;
+}
+
+header .nav {
+  display: flex;
+}
+
+.logo img {
+  width: 8rem;
+  padding: 1.5rem;
+}
+
+.triangle {
+    border-bottom: 50px solid white;
+    border-left: 50px solid transparent;
+    position: fixed;
+    top: 5rem;
+    right: 24px;
+    display: none;
+}
+
+#triangle.active {
+    display: flex;
+}
+
+#nav-list {
+   position: fixed;
+   top: 7rem;
+   right: 1.5rem;
+   background-color: white;
+   line-height: 4rem;
+   text-align: center;
+   left: 100%;
+}
+
+#nav-list.active {
+    left: 1.5rem;
+}
+
+.contact {
+    background-color: hsl(51, 100%, 49%);
+    border-radius: 3rem;
+    padding: .7rem 2rem;
+    font-weight: 600;
+}
+
+.nav-list ul {
+    width: 100%;
+}
+.nav-list li {
+   list-style: none;
+}
+
+.nav-list li a {
+     text-decoration: none;
+     text-transform: capitalize;
+     font-size: 1rem;
+     color: hsl(232, 10%, 55%);
+}
+
+.hamburger {
+    padding: 1.5rem;
+}
+
+/* End of header section*/
+
+/* Beginning of hero section*/
+.hero {
+    display: flex;
+    background: url('Images/mobile/image-header.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 83vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+  
+.hero h2 {
+   font-size: 2rem;
+   text-align: center;
+   margin-top: 6.5rem;
+   text-transform: uppercase;
+   letter-spacing: 6px;
+   line-height: 3rem;
+   color: white;
+   font-weight: 900;
+   position: relative;
+}
+
+.hero img{
+   margin-top: 2.5rem;
+   position: relative;
+}
+/* End of hero section*/
+
+/* Beginning of services section*/
+.services {
+  display: flex;
+  flex-direction: column;
+}
+
+.services-info {
+    text-align: center;
+}
+.services img {
+    width: 100%;
+}
+
+.services h3 {
+    font-size: 1.5rem;
+    padding: 3rem 2.5rem 1.5rem;
+    font-weight: 900;
+}
+
+.services p {
+     font-weight: 600;
+     line-height: 1.8rem;
+     padding: 0 1rem;
+     font-size: .9rem;
+     color: hsl(232, 10%, 55%);
+     letter-spacing: 1px;
+}
+
+.services h4 {
+     text-transform: uppercase;
+     font-weight: 900;
+     font-size: .8rem;
+     letter-spacing: 1px;
+     padding: 2rem 0 2.5rem;
+
+}
+
+.line {
+    background-color: hsl(51, 100%, 49%);
+    height: .5rem;
+    width: 8rem;
+    border-radius: 20%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+/* End of services section*/
+
+
+/* Beginning of Niches section*/
+.niches {
+
+}
+
+.niche {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 32rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+.niche-top {
+    background-image: url('Images/mobile/image-graphic-design.jpg');
+    color: hsl(167, 40%, 24%);
+}
+
+.niche-bottom {
+    background-image: url('Images/mobile/image-photography.jpg');
+    color: hsl(198, 62%, 26%);
+}
+
+.niche h3 {
+    margin-top: 20rem;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.niche p {
+    padding: 1rem;
+    text-align: center;
+    line-height: 1.7rem;
+    font-size: .9rem;
+    font-weight: 600;
+}
+/* End of Niches section*/
+
+/* Beginning of Testimonials section*/
+.testimonials {
+    margin-top: 3.5rem;
+    text-align: center;
+}
+
+.testimonials h2 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+
+}
+
+.testimonials img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin-top: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.testimonials p {
+    font-size: .9rem;
+    letter-spacing: .5px;
+    font-weight: 600;
+    line-height: 1.5rem;
+    color: hsl(232, 10%, 55%);
+    padding: 0 1rem;
+}
+
+.testimonials h3 {
+    font-size: .9rem;
+    font-weight: 900;
+    margin: 1.5rem 0 .5rem;
+}
+/* End of Testimonials section*/
+
+/* Beginning of Image-grid section*/
+.image-grid {
+    margin-top: 4.5rem;
+    display: grid;
+    grid-template: repeat(2, 1fr)/ repeat(2, 1fr);
+}
+
+.image-grid img {
+    width: 100%;
+}
+/* End of Image-grid section*/
+
+/* Beginning of Footer section*/
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(168, 34%, 41%);
+    height: 18rem;
+}
+
+footer .logo img {
+    color: hsl(167, 40%, 24%);
+    margin-top: 2rem;
+}
+
+footer ul {
+    display: flex;
+    margin-top: 1rem;
+}
+
+footer ul li {
+  text-transform: capitalize;
+  color: hsl(167, 40%, 24%);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+footer ul .services {
+    padding: 0 3rem 0 3rem ;
+}
+
+.icons {
+    margin-top: 4.5rem;
+}
+
+.icons img {
+    width: 1rem;
+}
+
+.icons .instagram {
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+.icons .twitter {
+    padding-right: 1.5rem;
+}
+/* End of Footer section*/
+
+
+
+/* Media querries for tablet*/
+
+@media screen and (min-width: 500px) {
+    html {
+        font-size: 24px;
+    }
+
+    .hero h2 {
+        margin-top: 14rem;
+    }
+}
+
+/* Media querries for desktop*/
+
+@media screen and (min-width: 900px) {
+    html {
+        font-size: 18px;
+        box-sizing: border-box;
+    }
+   .hamburger {
+       display: none;
+   }
+
+   #nav-list  {
+       left: 15rem;
+       width: 100%;
+       background-color: transparent;
+       top: 0;
+       padding: 0;
+   }
+
+   #nav-list ul {
+       width: 100%;
+       display: inline-flex;
+       margin-left: 13rem;
+       padding: 1rem;
+   }
+
+   .contact {
+       border-radius: 2rem;
+       padding: 0px 30px;
+   }
+
+   .nav-list li a {
+       color: white;
+   }
+   .nav-list li {
+       display: inline-flex;
+       padding: 1rem;
+       font-weight: 600;
+   }
+
+   .hero {
+       height: 100vh;
+       background: url('Images/desktop/image-header.jpg');
+       background-position: center;
+       background-size: cover;
+       background-repeat: no-repeat; 
+    }
+
+    .hero h2 {
+        margin-top: 8rem;
+        font-size: 2.5rem;
+        height: 5rem;
+    }
+    
+    .service {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+       justify-content: center;
+        align-items: center;
+    }
+
+    .service:nth-child(odd){
+        flex-direction: row-reverse;
+    }
+
+    .service-img {
+      width: 50%;
+      margin: 0;
+    }
+
+    .service img {
+        height: 0%;
+        width: 100%;
+    }
+
+    .service .services-info {
+       width: 50%;
+       text-align: start;
+    }
+
+    .services-info h3 {
+        text-align: start;
+        margin: 0rem 0 1rem 4rem;
+        width: 60%;
+        padding: 0;
+        font-size: 1.1rem;
+    }
+
+    .services-info p {
+        font-size: 15px;
+        letter-spacing: 1px;
+        line-height: 1.2rem;
+        margin: 0 1rem 1rem 4rem;
+        padding: 0;
+    }
+
+    .services-info h4 {
+        padding: 0;
+        margin: 0 0 0rem 4rem;
+        font-size: 15px;
+    }
+
+    .niches {
+        display: flex;
+        width: 100%;
+        height: 600px;
+    }
+
+    .niche-top {
+        background: url('Images/desktop/image-graphic-design.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;  
+        width: 50%; 
+    }
+    .niche-bottom {
+        background: url('Images/desktop/image-photography.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;  
+        width: 50%; 
+    }
+     
+    .testimonial {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .image-grid {
+        display: flex;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .hero h2 {
+        font-size: 2.5rem;
+        height: 4rem;
+        margin-top: 16%;
+    }
+
+    #nav-list {
+        left: 20rem;
+
+    }
+
+    .hero img {
+           width: 4%;
+    }
+
+    #nav-list ul {
+        margin-left: 20rem;
+    }
+}
+
