@@ -104,9 +104,9 @@ header .nav {
 }
   
 .hero h2 {
-   font-size: 2rem;
+   font-size: 3rem;
    text-align: center;
-   margin-top: 6.5rem;
+   margin-top: 8rem;
    text-transform: uppercase;
    letter-spacing: 6px;
    line-height: 3rem;
@@ -116,8 +116,9 @@ header .nav {
 }
 
 .hero img{
-   margin-top: 2.5rem;
+   margin-top: 5rem;
    position: relative;
+   height: 9rem;
 }
 /* End of hero section*/
 
