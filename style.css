@@ -376,6 +376,11 @@ footer ul .services {
         height: 5rem;
     }
     
+    .hero img {
+        height: 11rem;
+        margin-top: 1rem;
+    }
+    
     .service {
         display: flex;
         flex-direction: row;
