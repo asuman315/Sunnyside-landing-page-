@@ -59,6 +59,7 @@ header .nav {
 
 #nav-list.active {
     left: 1.5rem;
+    transition: 300ms ease-in-out;
 }
 
 .contact {
@@ -404,6 +405,7 @@ footer ul .services {
     .service img {
         height: 0%;
         width: 100%;
+        display: block;
     }
 
     .service .services-info {
